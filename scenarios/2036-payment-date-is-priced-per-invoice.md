@@ -1,0 +1,23 @@
+# By 2036 in the EU the payment date of a business invoice is no longer a contract term but a price the buyer's and the supplier's agents settle for each invoice at clearance, so working capital becomes a market the controller sets limits on and the bank loses the short-term lending it used to own
+
+Year: 2036
+Status: live
+Contradicts: 2036-bank-keeps-the-small-company-ledger. There the bank gives the ledger away to keep the loan; here suppliers' short-term financing comes from customers' agents buying early payment invoice by invoice, so the bank loses the lending that paid for the free ledger.
+Depends on:
+- C7 (the verifiable record is assembled from mandated invoice clearance and structured payment messages): an offer to pay early is priced against a cleared invoice both sides accept; if invoices were not cleared, each offer would first need the invoice verified.
+- C23 (the agent that reads a counterparty's messages is kept from payment release): the agent that bargains reads the supplier's offers, so it can only propose; if it could also release, one injected offer could empty the account.
+- C10 (hard limits with automatic disable belong at payment release): the controller's limits on early cash are set at release, and the release agent disables itself when a day's early payments exceed them; if limits lived in each journal, nothing would stop an aggregate run on cash.
+- C50 (an invoice issued through a French approved platform cannot be modified, only corrected by a new invoice or credit note): once the amount is fixed at issuance, the payment date is the one term agents can still bargain per invoice; if issued invoices could be edited, agents would haggle the amount instead.
+- C55 (in Mexico a buyer must accept or reject a supplier's invoice cancellation within three business days by a signed web-service response, and silence counts as acceptance): one company's system already answers another's under a binding deadline; without that precedent, no signed machine reply would bind a company.
+Clocks: early payment is already priced per invoice on platforms such as C2FO, but by suppliers or the platform in a daily batch, not by agents; euro-area banks must send instant payments since 9 October 2025, so cash moves the minute an offer is accepted; Google's agent payments protocol (September 2025) defines spending mandates for agents; the EU's cross-border e-invoicing and digital reporting start on 1 July 2030, putting intra-EU invoices into cleared form; the Commission proposed in 2023 to cap business payment terms, which, if adopted, fixes the outer date the market prices inside.
+Yield: 0.0
+
+In 2036 a Dutch food distributor's payables agent receives 3,400 cleared supplier invoices in a week (illustrative figures). For each, the supplier's receivables agent posts a price for payment today, in ten days, and at term, and the distributor's terms agent accepts the dates where the discount beats the company's cost of cash, within the controller's daily limit. The release agent pays the accepted ones by instant transfer. Small suppliers that once borrowed against receivables from a bank now get cash the day they clear an invoice, priced by their customers.
+
+Mechanism: Per-invoice early-payment pricing already exists, set by people in daily batches. Once intra-EU invoices clear from July 2030 (C7) and instant payment lets cash move on acceptance, an agent can price each invoice separately at almost no cost. Companies split the bargaining agent from the paying agent (C23) and put the controls on the paying side (C10), which auditors and treasurers already know how to test. Suppliers whose bank lines cost more than their customers' discount accept, and by the mid-2030s the payment date has become a priced variable rather than a negotiated term.
+
+The controller stops accruing payables by due date and starts setting the cost of cash the terms agent bids against, and the daily cap the release agent enforces. The treasurer stops arranging supply-chain finance programs with banks and watches how much cash leaves early each day. The supplier's credit manager stops chasing late payers and decides the discount curve its agent posts. The bank's working-capital desk competes by funding buyers' early-payment budgets.
+
+What would settle it: an early-payment program whose per-invoice rate an agent sets; a supplier funded mostly by customer discounts instead of a bank line.
+
+Signposts: by 2031 a discounting platform offers per-invoice agent pricing on cleared invoices; failing signpost, by 2034 early-payment rates in the EU are still set by people or bank supply-chain finance.

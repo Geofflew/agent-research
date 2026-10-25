@@ -1,0 +1,23 @@
+# Local credentials and environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+
+# Python and editors
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+
+# Research run state and fetched content
+eval/.cache/
+eval/verified-quotes.tsv
+eval/verdicts.tsv
+eval/verdict-titles.tsv
+judge-log.tsv
+results.tsv
+log/
+locks/

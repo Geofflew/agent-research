@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Research method | Agent Research</title><style>
+:root{color-scheme:light dark;--bg:#fcfcfa;--fg:#212b36;--muted:#607080;--line:#dce3e9;--accent:#2365a5}
+@media(prefers-color-scheme:dark){:root{--bg:#161b20;--fg:#e0e6ec;--muted:#a3b1bf;--line:#38434e;--accent:#85baff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.7 system-ui,sans-serif}
+main{max-width:900px;margin:auto;padding:38px 24px 80px}nav{display:flex;gap:20px;flex-wrap:wrap;font-size:14px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}h1{font-size:36px;line-height:1.2;margin-top:36px;letter-spacing:-1px}h2{font-size:25px;line-height:1.3;margin-top:38px}h3{font-size:19px;line-height:1.4;margin-top:28px}p{margin:14px 0}
+.muted,footer{color:var(--muted);font-size:14px}footer{border-top:1px solid var(--line);padding-top:20px;margin-top:48px}
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;margin:30px 0}.metric{border:1px solid var(--line);border-radius:8px;padding:18px}.metric strong{display:block;font-size:32px;line-height:1.2}.metric span{color:var(--muted);font-size:14px}
+blockquote{border-left:3px solid var(--line);padding-left:18px;margin-left:0;color:var(--muted)}code{font-size:.88em}pre{padding:18px;background:var(--line);overflow:auto;border-radius:6px}li{margin:8px 0}
+</style></head>
+<body><main><nav aria-label="Reports"><a href="progress.html">Overview</a><a href="synthesis.html">Synthesis</a><a href="themes.html">Themes</a><a href="horizons.html">Scenarios</a><a href="method.html">Method</a></nav><h1>Method: research as a sequence of experiments</h1>
+<p>The workflow stores research state in ordinary files so a person can inspect the evidence and an agent can continue the work without relying on a long conversation.</p>
+<h2>Evidence, claims, and scenarios</h2>
+<p>A source entry holds a URL, a declared type, a summary, and attributed quotations. A claim names its source entries and explains the reasoning that connects them. A scenario describes a possible future and names the claims, assumptions, clocks, and signposts it depends on.</p>
+<p>These layers have different standards. A source quotation must match the source. A claim may infer beyond it but must explain the step. A scenario may imagine a world that does not yet exist, while making its assumptions visible.</p>
+<h2>The iteration</h2>
+<p>Choose an unresolved question, collect evidence, propose one change, check the evidence, evaluate the argument, and decide whether to keep it. Add, strengthen, sharpen, split, merge, retire, and cut are different experiments. An attractive idea that is not yet supported stays in a thread.</p>
+<p>The most valuable disagreement is with a documented position: a standard, a study, or a product design. Inventing an easy position to disagree with earns nothing. A new screen also earns little unless it changes what a preparer, reviewer, controller, or buyer actually does.</p>
+<h2>Evaluating claims</h2>
+<p>The thesis evaluator first fetches cited public pages and checks source quotations after whitespace, punctuation, case, and HTML normalization. It then asks a separate model to score grounding, novelty, mechanism, specificity, consequence, tension, evidence, and reach.</p>
+<p>The score is the sum of each live claim&#x27;s grounded contribution, minus a per-claim cost and a word penalty. Source type caps the evidence dimension. Optional reviewer verdicts can cap a weak claim. Repeated model samples are combined by their median; a focused claim receives more samples.</p>
+<p>Previously verified quotations can survive a temporary fetch failure if a local verification record exists. Such a record proves only an earlier text match. It does not prove that the source is still current or that the conclusion is correct. The public export starts without those records.</p>
+<h2>Evaluating scenarios</h2>
+<p>Scenarios use a separate rubric: coherence, anchoring, clocks, mechanism, reach, consequence, and surprise. They have no quotation gate because they describe possible futures. Their score includes a length penalty. Passing the rubric does not turn a forecast into evidence.</p>
+<h2>Independent review</h2>
+<p>A reviewer should read the arguments without seeing their scores first. Look for repeated sources, unsupported causal steps, incentives to write longer or bolder, and claims that only look novel because of their phrasing. Freeze the evaluator during an experiment; make rubric changes separately.</p>
+<h2>Practical limits</h2>
+<p>Page extraction is basic and may fail on JavaScript pages, scanned PDFs, or blocked hosts. Source types are declared metadata rather than independently audited classifications. A matching quotation can still be misread. Model judgments can be biased or inconsistent. Small score differences should not determine a keep decision without inspecting the actual change.</p>
+<p>The scripts evaluate and render files. They do not schedule agents, manage remote workers, or publish a repository. Those are responsibilities of the operator&#x27;s runner.</p><footer>Research snapshot: 24 October 2026. Report built 2026-10-24. Hypotheses and scenarios are research arguments, not validated predictions.</footer></main></body></html>

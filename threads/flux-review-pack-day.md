@@ -1,0 +1,20 @@
+# What does the controller do with an agent-drafted flux review pack before it goes to the CFO?
+
+Status: live
+Opened: session 0009C
+Yield: 0.0
+Touches: C25, C26, C11, C32; threads/who-anchors-who-discounts; threads/what-replaces-the-checklist
+Sources: [flux-dualentry-docs], [flux-double-help-ai-flux], [flux-floqast-ai-variance-analysis], [flux-blackline-fluctuation-glossary], [flux-prepito-substantive-analytics]
+
+What we know so far: Shipped flux tools set the trigger and draft the words, but none checks the words. Thresholds are dollar and percent with AND/OR logic ("don't show me a variance unless it's at least $1,000 AND 20%" [flux-double-help-ai-flux]; "Both limits must be exceeded for a line to be flagged" [flux-dualentry-docs]); FloQast "alerts preparers when a fluctuation requires an explanation, and logs evidence of every sign-off" [flux-floqast-ai-variance-analysis] (vendor). The reviewer accepts, edits, or discards a line-by-line AI draft; DualEntry admits the draft "uses statistical pattern-matching against account history" and "re-flags any row whose balance changed after you wrote an explanation"; Double flags a stale description in orange and lets the user pick the AI model. No vendor doc has a corroboration step. Audit practice for the same act says the opposite: "Corroborate it with evidence that does not come from the person who gave it" and "The answer alone is not evidence" [flux-prepito-substantive-analytics] (secondary, paraphrasing AS 2305.21). So the controller reading the pack is in the auditor's position toward an unsupported management explanation (C25), with the tool tracking staleness but not support.
+
+What it would take to become a claim or edit: a primary passage (AS 2305 text via a mirror, or an audit firm's MRC guide) on the precision a flux review needs to count as a control, plus one vendor that attaches GL lines to each drafted explanation; then an experience edit under C25 (controller re-confirms re-flagged rows and attaches the entries before sign-off) or a B claim that agent-drafted flux commentary fails as a management review control unless each line cites its entries.
+
+Open sub-questions:
+- Does an auditor test a flux review with AI-drafted explanations as a management review control, and at what precision?
+- Who reads the pack: does the CFO see which lines were AI-drafted and unedited?
+
+0009C iter 126 (designer, new working-day thread under the one-per-two-kept-edits allowance; kept experience edits since the last opening: C29, C38, C55, C46, C42).
+0009C iter 130 (designer experience C49 kept 9->9, +40 words): controller answers the auditor's model-per-month question only from a kept log, since flux tools let a user switch the drafting model [flux-double-help-ai-flux]. First kept edit from this thread. (C25 target gone: merged into C46 by 0008A.)
+
+0009B explorer research (no edit, session paused): no fetchable standard text for SAPA 11 / AS 2305 / ISA 520 (all PDF or blocked). Secondary: Deloitte via CFO.com 2016: '$X or Y% of a line item' threshold not sufficiently precise; precision must be defined vs materiality [flux2-cfo-deloitte-mrc-consensus]; Ciferi ISA 520.7 restatement: explanation alone not sufficient, must corroborate [flux2-ciferi-isa520-corroborate]; CPA Journal 1992 SAS 56 lineage [flux2-cpajournal-1992-sas56-analytical]. Vendors: BlackLine Verity Flux 'every explanation is fully traceable back to the source transactions' [flux2-blackline-ai-you-can-trust-verity-flux]; Cube 'traces every figure to the GL transaction behind it' [flux2-cube-variance-analysis-traced-to-transaction] (both marketing, drill-down not per-line citation). EY: auditors look for evidence of management review and evaluation of AI output; IPE expectations [flux2-ey-ai-audit-readiness-financial-reporting]. Finding: flux tools' dollar-AND-percent trigger is the threshold form Deloitte calls imprecise. Claim candidate for B: AI-drafted flux review fails as MRC unless threshold set vs materiality and each line corroborated; needs a standard host.

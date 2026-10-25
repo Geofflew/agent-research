@@ -1,0 +1,23 @@
+# By 2036 small companies no longer buy a ledger, because the bank that holds the operating account keeps the books from the payments and e-invoices it already handles, and the outside accountant's job becomes reviewing the bank's books for the bank's own credit team
+
+Year: 2036
+Status: live
+Contradicts: 2036-close-layer-owns-the-ledger. There the company's close platform is the control layer over interchangeable ERPs; here small companies buy neither, because the bank holds the payment record, the payee control, and the loan.
+Depends on:
+- C7 (the verifiable record is assembled from invoice clearance and structured payment messages that outside parties hold): the bank holds the payment half and receives the invoice half as e-invoices; if that record did not form, the bank could not draft the non-cash entries.
+- C41 (Indian lenders already read the borrower's tax returns and bank feed directly): the bank gives the ledger away to lend on it; if lenders kept asking for a borrower-prepared package, keeping the books would earn the bank nothing.
+- C40 (agents first enter new payee accounts where a register shows who owns them, the payee check C23 leaves to a person's callback): the bank already checks payee names and pays for payee fraud, so the control the ERP agent was denied sits where the money moves; if it stayed in the ERP, the bank would hold no control the company lacks.
+- C45 (a firm whose agents post a client's entries can give the lender a review report only while the owner accepts the agent's decisions, because posting is a management responsibility): here the bank posts, so the accounting firm can review, and the bank, which cannot lend on books it prepared itself, becomes the buyer of that review; if C45 is wrong, the accountant's role would shrink to tax.
+- C56 (a lender that can read the borrower's books adds that access to the audit rather than accepting it in place of one, because the audit buys a lower cost of debt the data does not): even the bank that keeps the books still pays an outside firm to review them; if data alone bought the lower cost of debt, the bank would lend on its own ledger and the accountant would have no role.
+Clocks: NatWest has given business customers FreeAgent accounting free for as long as they keep the account since 2018; UK banks have reimbursed microenterprises for push payment fraud up to £85,000 since 7 October 2024; EU verification of payee has been mandatory for euro transfers since 9 October 2025; B2B e-invoicing mandates start in Belgium, Poland, and France in 2026; small companies replace accounting software every seven to ten years, so the 2018 to 2022 cloud cohort chooses again between 2028 and 2032.
+Yield: 0.0
+
+In 2036 the owner of a $12 million building-supply company pays no one for accounting software. Its bank receives its invoices as e-invoices, matches them to the payments it clears, and keeps the ledger. On the third working day the bank's agent posts the accruals, depreciation, and deferred revenue it drafted, and sends the owner and the outside accountant the items it could not settle (eleven this month, illustrative).
+
+Mechanism: Since 2018 a large UK bank has given bookkeeping away with the account. Once the e-invoicing mandates of 2026 put supplier and customer invoices in structured form, the bank's agent can also draft the non-cash entries that were the rest of a small company's close (C7). Two gains make the ledger worth giving away: the bank lends on a record it holds (C41), and it cuts the payee-fraud losses it has carried since 2024 by controlling payees at payment (C23, C40). Companies replacing software between 2028 and 2032 take the free ledger. Because the bank cannot rely on books it prepared, it pays for an outside review, which accounting firms can now give because they no longer post (C45).
+
+The owner stops paying a bookkeeper and decides, each month, whether to accept or dispute the bank's accruals. The accountant stops posting and reviews the bank's books in a report the bank's credit team reads. The credit officer tests covenants on the bank's own ledger. Changing banks now means moving the ledger, the payee history, and the loan together.
+
+What would settle it: a bank posting accruals, not only categorization, inside a business account; a bank credit policy accepting its kept ledger plus an outside review in place of borrower statements.
+
+Signposts: by 2029 a large bank offers an agent that posts non-cash month-end entries for business customers; failing signpost, by 2032 small companies still buy accounting software separately from their bank at 2025 rates.

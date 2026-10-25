@@ -1,0 +1,22 @@
+# By 2036 a first-year accountant is hired to attack the company's finance agents rather than to prepare or re-prepare entries, because the yearly agent certifications that insurers and auditors accept require adversarial testing by people who know how the books can be fooled, and that work is what licensing boards count as experience
+
+Year: 2036
+Status: live
+Contradicts: 2036-controller-of-record, where judgment for smaller companies is rented as an outside licensed signature; here juniors are hired again, for a job no agent can do for itself, and the people who reach manager seats in the late 2030s learned the business by finding where it breaks.
+Depends on:
+- C23 (the hard limit on agent authority is adversarial input, not error rate): the evidence the limit needs is attack testing; if error rate were the binding risk, a blind sample would be the evidence and the junior would re-prepare items instead.
+- C17 (teams shrink by not hiring juniors, and by about 2032 the binding constraint is the supply of mid-level reviewers): this scenario is what refills the junior seat once that shortage bites; if mid-level reviewers stayed plentiful, companies would buy attack testing from outside firms rather than train it.
+- C26 (every switch to auto-post or threshold change restarts the evidence): each settings change needs fresh attack tests, which creates steady work; if changes did not restart the evidence, one outside test a year would do.
+- C30 (the conceptual review the auditor tests stays with a manager): the manager decides which successful attacks are deficiencies, and the junior learns from that judgment; if that seat were removed, nobody would turn the junior's findings into decisions.
+Clocks: the AIUC-1 agent standard is certified yearly and its red-teaming runs 1,000 to 5,000 test scenarios; the AICPA's attack-testing assurance offering with AIUC is planned for early 2027; Texas and California's two-year experience routes count supervised non-routine work from 2026 and 2027, with first cohorts licensed in 2028 and 2029; juniors not hired from 2026 would have been the mid-level of 2032 to 2036; material weaknesses for inadequate accounting resources are disclosed in each annual report.
+Yield: 0.0
+
+At 9:00 on a Monday in 2036 a first-year accountant at a $600 million distributor opens this week's attack list (illustrative). The payables agent's matching tolerance was widened on Friday, so the list asks for supplier invoices that would pass the new tolerance while paying the wrong entity, a credit note that reverses a cleared invoice twice, and a "new controller" email asking to change a vendor account. The accountant builds each case from the company's real vendors, runs it in the agent's test environment, and records what got through. By Thursday two attacks have succeeded; the manager classifies one as a deficiency that blocks the tolerance change and one as accepted risk with a monitoring rule, and the accountant writes both into the certification file the auditor and the insurer read.
+
+Mechanism: Yearly agent certifications that test attacks already exist. Because the binding risk is manipulation rather than error (C23), insurers and auditors ask for attack evidence, and because every settings change restarts it (C26), the testing becomes continuous. Outside red-team firms know models but not a distributor's vendors and rebate terms, which is what the attacks that matter are built from. When the reviewer shortage reaches review seats around 2032 (C17), audit committees need both continuous attack evidence and a pipeline of future managers. Hiring juniors to build the attacks, under a manager who turns findings into decisions (C30), buys both with one salary, and the experience routes already count that supervised non-routine work.
+
+The junior stops reconciling and starts writing attacks from the company's real documents. The manager stops reviewing preparation and decides which successful attacks block a change. The controller schedules settings changes around the attack queue, and the auditor reads the attack file as the evidence over agent authority.
+
+What would settle it: a finance job posting for adversarial testing of accounting agents; a board of accountancy ruling that agent testing counts as experience.
+
+Signposts: by 2029 an audit firm or close vendor advertises finance-specific red-teaming of agents; failing signpost, by 2032 attack testing is fully automated by the vendors' own agents and no junior role forms.
